@@ -1,20 +1,32 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { ScrollView, StyleSheet, Text, View } from 'react-native';
+import TrackingScreen from './Components/TrackingScreen';
+import TS from './Components/TS';
+import MyForm from './Components/MyForm';
+import MF from './Components/MF';
+import UserRightScreen from './Components/UserRightScreen';
+import UR from './Components/UR';
+import Demo from './Components/demo1';
+import MFDemo from './Components/MFDemo';
+
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+    <View >
+      <ScrollView>
+      <Text>
+      {/* //for learnong only */}
+      {/* <Demo/> */}
+      {/* <MFDemo/> */}
+      
+     <UserRightScreen/>
+     <TrackingScreen/>
+     {/* <MF/> */}
+
+    </Text>
+     </ScrollView>
     </View>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+
